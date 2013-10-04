@@ -231,7 +231,7 @@ class Auth
 		$val->add('password', 'Password')
 			->add_rule('trim')
 			->add_rule('required')
-			->add_rule('min_length', 8)
+			->add_rule('min_length', 4)
 			->add_rule('max_length', 128);
 		return $val;
 	}
