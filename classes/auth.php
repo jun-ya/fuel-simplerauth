@@ -226,7 +226,7 @@ class Auth
 		$val->add('username', 'Username')
 			->add_rule('trim')
 			->add_rule('required')
-			->add_rule('valid_string', 'alpha_numeric')
+			->add_rule('valid_string', 'url_safe')
 			->add_rule('max_length', 20);
 		$val->add('password', 'Password')
 			->add_rule('trim')
